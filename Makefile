@@ -1,7 +1,7 @@
 PY ?= python
 DB ?= warehouse/ua.duckdb
 
-.PHONY: all data report test clean
+.PHONY: all data report test clean charts
 
 all: data report
 
@@ -16,3 +16,6 @@ test:
 
 clean:
 	rm -rf warehouse
+
+charts:                                            ## README charts -> docs/charts
+	$(PY) charts/make_charts.py

@@ -18,6 +18,15 @@
 | **Why it matters** | Spend moves to channels that pay back over the player's life, with an honest range around each forecast, not a single confident number. |
 | **Proof** | From day 30 the forecast is within 2 to 11% on average (backtest MAPE), every 90% range contains the real 180-day ROAS, and the channel ranking matches the truth. Day-7 ROAS ranks the channels backwards. 11 pytest tests. See [results](results/results.md). |
 
+## Charts
+Rendered from this repo's own results by `charts/make_charts.py` (`make charts`); CI re-renders them on every push.
+
+These results also feed the **Acquisition** page of the live studio dashboards: [saigwe.github.io/mobile-game-player-analytics](https://saigwe.github.io/mobile-game-player-analytics/).
+
+![Day-7 ROAS, day-180 forecast with 90% range and actual day-180 ROAS by channel](docs/charts/roas_trap.png)
+
+![Backtest forecast error by channel and forecast day](docs/charts/backtest_error.png)
+
 ## The trap, in one table (day-30 recommendation)
 | Channel | CPI | D7 ROAS | D180 ROAS forecast (90% range) | Actual D180 ROAS | Decision |
 |---|---|---|---|---|---|
